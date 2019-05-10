@@ -11,8 +11,8 @@ permalink: /start/
 		<h3> Prerequisites</h3>
 		<p>ECOGEN must be compiled with <b>C++</b>. It also requires a functional system implementation of <b>MPI library</b> (not provided in this package). Depending on your operating system, click on the corresponding link below to obtain additional informations: 
 		</p>
-		<p>Installing prerequisites for <a href="/prerequisitesUbuntu"> Ubuntu system / Windows 10 using bash</a> (<em>Ubuntu on Windows App</em>) </p>
-		<p>Installing prerequisites for  <a href="/instalOnWindows"> Windows system </a></p>
+		<p>Installing prerequisites for <a href="{{ "/prerequisitesUbuntu" | prepend: site.baseurl }}"> Ubuntu system / Windows 10 using bash</a> (<em>Ubuntu on Windows App</em>) </p>
+		<p>Installing prerequisites for  <a href="{{ "/instalOnWindows" | prepend: site.baseurl }}"> Windows system </a></p>
 	</div>	
 	<div> 
 		<h3> Download ECOGEN</h3>

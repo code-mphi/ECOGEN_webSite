@@ -29,14 +29,14 @@ permalink: /overview/
 		<article>
 			<h2> <span class="lettre">E</span>COGEN is Evolutive </h2>
 			<p>Academic research results never represent achievements but rather step forwards. This is all the more noticeable in the young discipline of numerical sciences where models and methods are in constant evolution to better represent physical phenomena. In the structure of ECOGEN, the modular aspect of C++ programming langage has been used to help developping future evolutions.</p>
-			<img src="/assets/images/mainClasses.png" alt="general ECOGEN structure" />
+			<img src="{{ "/assets/images/mainClasses.png" | prepend: site.baseurl }}" alt="general ECOGEN structure" />
 			<p>Thanks to that, it becomes easy for developper to add a new equation of state or flow model.</p>
 		</article>
 		<article>
 			<h2> E<span class="lettre">C</span>OGEN is designed for Compressible flows </h2>
 			<p>Compressible information is transmitted thanks to wave propagation. Mathematical systems of equations modeling compressible flows present hyperbolic formulations that should be specifically treated numerically.</p>
 			<div class="flex">
-				<img src="/assets/images/shocks.png" alt="shock waves" />
+				<img src="{{ "/assets/images/shocks.png" | prepend: site.baseurl }}" alt="shock waves" />
 				<p>ECOGEN is designed for such compressible flows.</p>
 			</div>
 		</article>
@@ -48,7 +48,7 @@ permalink: /overview/
 			<h2> ECO<span class="lettre">G</span>EN is Genuine </h2>
 			<div class="flex">
 				<p>Existing CFD codes can treat multiphase flows, but ECOGEN is the first to use the interface diffuse theory to capture dynamically the complex shapes of multiphase flows on stuctured or unstructured Grids. Moreover, it includes an Adaptive Mesh Refinement (AMR) method for Cartesian Grids specifically developed and optimized for such multiphase flows.</p>
-				<img src="/assets/images/maillage.png" alt="mesh" />
+				<img src="{{ "/assets/images/maillage.png" | prepend: site.baseurl }}" alt="mesh" />
 			</div>
 		</article>
 		<article>

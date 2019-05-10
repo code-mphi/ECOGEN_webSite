@@ -1,5 +1,4 @@
 ---
-
 layout: page
 title: Prerequisites Ubuntu
 permalink: /prerequisitesUbuntu/
@@ -53,7 +52,7 @@ permalink: /prerequisitesUbuntu/
 		<div class="cmd">
 			source /etc/bash.bashrc
 		</div>
-		<p>If the installation succeed you should use the mpicxx command in your terminal. Then proceed to the test of ECOGEN compilation in the previous <a href="/start/"> page </a></p>
+		<p>If the installation succeed you should use the mpicxx command in your terminal. Then proceed to the test of ECOGEN compilation in the previous <a href="{{ "/start" | prepend: site.baseurl }}"> page </a></p>
 	</div>	
 
 

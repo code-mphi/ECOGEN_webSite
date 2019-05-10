@@ -46,7 +46,7 @@ a:hover {
 
 /*header {
   background: $header;
-  background-image: url(/assets/images/Background.png);
+  background-image: url('#{$baseurl}/assets/images/Background.png');
   padding: 0px 15px;
   text-align: center;
   margin: 50px 0 0;
@@ -58,7 +58,7 @@ a:hover {
 
 #ECOGEN {
   background: $header;
-  background-image: url(/assets/images/Background.png);
+  background-image: url('#{$baseurl}/assets/images/Background.png');
   padding: 0px 15px;
   text-align: center;
   margin: 50px 0 0;
@@ -312,7 +312,7 @@ font-style: italic;
   line-height:49px;
   text-align:center;
   vertical-align:middle;
-  background:url(/assets/images/bouton.png) no-repeat;
+  background:url('#{$baseurl}/assets/images/bouton.png') no-repeat;
   background-size: contain;
   background-position: center;
   text-decoration:none;
@@ -320,7 +320,7 @@ font-style: italic;
   font-size:0.3em;
 }
 .button a:hover {
-  background:url(/assets/images/bouton2.png) no-repeat;
+  background:url('#{$baseurl}/assets/images/bouton2.png') no-repeat;
   background-size: contain;
   background-position: center;
 }

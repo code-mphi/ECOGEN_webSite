@@ -19,6 +19,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   An open source CFD code dedicated to multiphase compressible flows.
 baseurl: "/ECOGEN_webSite" # the subpath of your site, e.g. /blog
 url: "https://code-mphi.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+#baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: noname
 github_username:  code-mphi
 

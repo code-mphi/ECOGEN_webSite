@@ -17,13 +17,13 @@ videoErrormessage: Sorry, your browser does not support webm video format or vid
 				Shock wave propagation in ducts is a challenging problem for safety issues. Such studies are performed to improve the safety in confined installation thanks to a better knowledge of the pressure wave characteristics. In this movie,the shock wave propagation in a "Y" bifurcation channel is shown: because of the bifurcation, the amplitude of the incident pressure jumps is expected to decrease in the secondary ducts.
 			</div>
 			<div class="galleryVideo">
-				<video  src="/assets/videos/chocs.webm" controls preload >{{ page.videoErrormessage}}	</video>
+				<video  src="{{ "/assets/videos/chocs.webm" | prepend: site.baseurl }}" controls preload >{{ page.videoErrormessage}}	</video>
 				<figcaption>Shock wave propagation in a channel junction (A.Marty courtesy).</figcaption>
 			</div>
 		</div>		
 		<div class="gallery">
 			<div class="galleryVideo">
-				<video  src="/assets/videos/shockHeliumBubble_forFun_highResolution_2.webm" controls preload >{{ page.videoErrormessage}}</video>
+				<video  src="{{ "/assets/videos/shockHeliumBubble_forFun_highResolution_2.webm" | prepend: site.baseurl }}" controls preload >{{ page.videoErrormessage}}</video>
 				<figcaption>Interaction shockwave  / Helium bubble<br>
 				Top video: Volume fraction <br>
 				Bottom video: Interface position </figcaption>
@@ -39,7 +39,7 @@ videoErrormessage: Sorry, your browser does not support webm video format or vid
 		<p> The ability to treat cavitation problems is definitely one of the major asset of diffuse interface formulation. Now, thanks to consistent thermodymamic consideration, it is possible to simulate automatially interface appearance / disappearance between a liquid and its vapor without any specific algorithm for interface tracking.</p>
 		<div class="gallery">
 			<div class="galleryVideo">
-				<video  src="/assets/videos/bubbleCollapse.webm" controls preload>{{ page.videoErrormessage}}</video>
+				<video  src="{{ "/assets/videos/bubbleCollapse.webm" | prepend: site.baseurl }}" controls preload>{{ page.videoErrormessage}}</video>
 				<figcaption>Bubble collapse near a wall. Courtesy of Caltech MEC. </figcaption>
 			</div>
 			<div class="galleryVideo">
@@ -51,7 +51,7 @@ videoErrormessage: Sorry, your browser does not support webm video format or vid
 				This very complex flow shows two majors phenomena due to an high speed bubble of water that impacts a wall (on the left) : a right-moving shock wave is created. One can then observe the typical interaction of a bubble that contains heavy fluid (water) in a lighter fluid (air) with Rychtmyer-Meshkov instabilities. The impact on the wall also creates left-moving expansion waves that leads to  the appearence of cavitation pockets due to the pressure decreasing.
 			</div>				
 			<div class="galleryVideo">
-				<video src="/assets/videos/rycht.webm" controls preload>{{ page.videoErrormessage}}</video>
+				<video src="{{ "/assets/videos/rycht.webm" | prepend: site.baseurl }}" controls preload>{{ page.videoErrormessage}}</video>
 				<figcaption>Water/air Rychtmeyer Meshkov instability</figcaption>
 			</div>
 		</div>
@@ -62,7 +62,7 @@ videoErrormessage: Sorry, your browser does not support webm video format or vid
 		<p> The simulation of droplet fragmentation is of prime interest considering various industrial applications as well as for academic knowledge. The deformation of the droplet is a competition between surface tension and inertial forces (measured by the Weber number) that can lead to the creation of smaller droplets. Surface tension then decides for the resulting droplets sizes. </p>
 		<div class="gallery">
 			<div class="galleryVideo">
-				<video controls src="/assets/videos/atomization3D.webm" controls preload>{{ page.videoErrormessage}}</video>
+				<video src="{{ "/assets/videos/atomization3D.webm" | prepend: site.baseurl }}" controls preload>{{ page.videoErrormessage}}</video>
 				<figcaption>Fragmentation of a droplet in a high speed flow</figcaption>
 			</div>
 			<div class="galleryVideo">
@@ -74,7 +74,7 @@ videoErrormessage: Sorry, your browser does not support webm video format or vid
 				In this movie, a liquid droplet is moving in a box with perfect solid walls. At the impact on the upper wall the bubble is sliding, deforming then dividing in smaller droplets. Due to the the gravity some small droplets fall down while a droplet is sliding down along the vertical wall. One can observe the rebounds of the droplets as well as the various droplet/droplet interactions leading to coalescence phenomena. 
 			</div>	
 			<div class="galleryVideo">
-				<video src="/assets/videos/movie_V1.webm" controls preload>{{ page.videoErrormessage}}</video>
+				<video src="{{ "/assets/videos/movie_V1.webm" | prepend: site.baseurl }}" controls preload>{{ page.videoErrormessage}}</video>
 				<figcaption>Motion and fragmentation of a droplet in a box with solid walls.<br>
 				Simulation including surface tension effects and gravity.</figcaption>
 			</div>

@@ -8,7 +8,7 @@ permalink: /research/
 	<h2> Diffuse interface method </h2>
 	<p>ECOGEN is a receptacle of a story of diffuse interface method (DIM) theory that started in the late 90s.
 	 DIM summarizes more than 20 years of researches on multiphase flow<sup>1</sup> modelling with the objective to develop mathematical models as well as their associated numerical methods.  </p><p>What is a diffuse interface? In DIM theory, the interfaces between pure phases are captured as diffuse numerical zones meaning that one goes continuously from one phase to another.</p>
-	 <img src="/assets/images/diffInterface.png" alt="diffuse interface" />
+	 <img src="{{ "/assets/images/diffInterface.png" | prepend: site.baseurl }}" alt="diffuse interface" />
 	 <figcaption>1D extraction of the diffuse interface zone of a water droplet.</figcaption>
 	 <p> This way is possible thanks to a thermodynamical consistency. Then, the flow solution does no longer requires interface tracking algorithms: It became easy to simulate complex topological shape evolutions between miscible or non miscible fluid. Moreover, pressure waves (shock waves, acoustic waves) can propagate and interact properly in the whole flow.</p><p>
 	 The basic research on DIM is now matured enough to propose ECOGEN, a numerical tool that can be largely cast and use to solve industrial as well as research  multiphase flow problems. 
