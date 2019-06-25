@@ -12,4 +12,5 @@
   link: /partners/
 - name: Services
   link: /services/
-
+- name: Doc
+  link: https://ecogen.readthedocs.io/en/latest/
