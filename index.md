@@ -2,5 +2,5 @@
 layout: accueil
 ---
 
-<h2>An open source CFD code for compressible multiphase flows </h2>
+<div id="subtitle">The open source CFD plateform for numerical simulation of compressible multiphase flows </div>
 

@@ -1,5 +1,10 @@
+/******************/
+/*General settings*/
+/******************/
+
 body {
   margin: 0;
+  margin-top:60px;
   color: $font-color;
   font-family: $font-style;
   font-size: 1.1em;
@@ -8,12 +13,11 @@ body {
   //text-align: justify;
 }
 
-
 h1,
 h2,
 h3 {
   font-weight: 600;
-  color: $heading-font-color;
+  /*color: $heading-font-color;*/
   font-family: $heading-font;
   line-height: 1.5;
 }
@@ -30,7 +34,7 @@ h1 {
 }
 h2 {
   font-size: 2em;
-  text-align: center;
+  text-align: left;
   /*margin: 10px;*/
 }
 a,
@@ -44,75 +48,60 @@ a:hover {
   text-decoration: underline;
 }
 
-/*header {
-  background: $header;
-  background-image: url('#{$baseurl}/assets/images/Background.png');
-  padding: 0px 15px;
-  text-align: center;
-  margin: 50px 0 0;
-  height: 50vh;
-  display: flex;
- // justify-content: center;
-  align-items: center;
-}*/
-
-#ECOGEN {
-  background: $header;
-  background-image: url('#{$baseurl}/assets/images/Background.png');
-  padding: 0px 15px;
-  text-align: center;
-  margin: 50px 0 0;
-  height: 50vh;
-  display:flex;
-  flex-direction:column; 
-  justify-content: center;
-  align-items: center;
-  font-size: 60px;
-  /*text-shadow: -1px -1px #f00, 1px 1px #a00, -3px 0 4px #000;*/
-  /*font-family:"Segoe print", 'Muli', sans-serif;*/
-  font-family:$heading-font;
-  color: #dd0000;
-  font-weight:600;
-  -moz-box-shadow:none;  
-  -webkit-box-shadow: none;  
-  box-shadow:none;  
-  h1{
-    font-size:2em;
-    margin-bottom:30px;
-  }
-}
-
 main {
   padding: 0 15px;
   max-width: $content-width;
-  margin: 70px auto;
-  /*z-index:1000;*/
-  /*margin: 0 auto;*/
+  margin: 0px auto 50px auto;
 }
-/*div{  z-index:1000;}*/
+
 time {
   color: #898989;
 }
+
 .container {
   max-width: $content-width;
   margin: 0 auto;
 }
 
-/* Aside */
+/*********/
+/*Bandeau*/
+/*********/
+
+#logo{
+  display: flex;
+  align-items: center;
+  margin-right:20px;
+}
+
+#logo a{
+  display: flex;
+  align-items: center;
+  margin:0;
+}
+
+#logo img{
+  width:50px;
+  margin:0;
+  padding: 0;
+}
 
 #bandeau {
+  display: flex;
+  flex-direction: row;
+  justify-content :center;
+  align-items: center;
   position: fixed;
   top: 0;
-  left: 0;
+  /*left: 0;*/
   background: #fff;
   width: 100%;
-  z-index: 2;
+  z-index:2;
   border-bottom: 1px solid lighten($light, 30%);
   box-shadow: 0px 1px 1px RGBA(4, 25, 54, 0.1);
   nav {
-    float: center;
+    /*float: center;*/
     max-width: 800px;
-    margin: 0 auto;
+    /*margin: auto;*/
     ul {
       margin: 0;
       padding: 0;
@@ -123,7 +112,7 @@ time {
         a {
           text-decoration: none;
           display: block;
-          padding: 15px;
+          padding: 20px;
           font-family: 'Muli', sans-serif;
           line-height: 20px;
           margin-bottom: -1px;
@@ -132,7 +121,7 @@ time {
           &:active {
             background: $header;
             text-decoration: none;
-            color: $main;
+            color: $link-hover-color-menu;
           }
         }
       }
@@ -145,6 +134,10 @@ time {
   }
 }
 
+/********/
+/*Footer*/
+/********/
+
 footer {
   text-align: center;
   padding: 10px;
@@ -154,6 +147,7 @@ footer {
   align-items: center;
   font-size: 0.8em;
 }
+
 /******************************************/
 /*  réglages paragraphe */
 /******************************************/
@@ -176,7 +170,6 @@ p{
   display: flex;
   flex-direction: row;
   justify-content :center;
-
   /*justify-content: space-between;*/
 }
 
@@ -203,11 +196,6 @@ article{
   text-align: justify;
 }
 
-/*Reglages aside*/
-/*aside>h1{
-  font-size: 1em;
-}*/
-
 aside{
   border-right-style: solid;
   border-right-color: grey;
@@ -216,9 +204,11 @@ aside{
   margin-right: 50px;
   padding-right: 20px;
 }
+
 /******************************************/
 /*Gestion des logos*/
 /******************************************/
+
 #logos{
     display: flex;
     flex-direction: row;
@@ -238,9 +228,11 @@ img{
   height:100%;
   padding:20px;
 }
+
 /******************************************/
 /*Gestion video*/
 /******************************************/
+
 .gallery{
     display: flex;
     flex-direction: row;
@@ -292,6 +284,7 @@ font-style: italic;
 /**********************/
 /* Commandes terminal */
 /**********************/
+
 .cmd{
   border-style: solid;
   border-width: 1px;
@@ -301,27 +294,21 @@ font-style: italic;
   font: "Courrier New";
   padding-left: 20px;
 }
-/**********************/
-/*Bouttons*/
-/**********************/
 
-.button a{
-  margin-top:30px;
-  display:block;
-  width:188px;
-  line-height:49px;
-  text-align:center;
-  vertical-align:middle;
-  background:url('#{$baseurl}/assets/images/bouton.png') no-repeat;
-  background-size: contain;
-  background-position: center;
-  text-decoration:none;
-  font-family: $button-font;
-  font-size:0.3em;
-}
-.button a:hover {
-  background:url('#{$baseurl}/assets/images/bouton2.png') no-repeat;
-  background-size: contain;
-  background-position: center;
+#docs{
+  width:150px;
+  height:auto;
+  margin:0;
+  padding: 0;
 }
 
+.colonneLeft{
+  display: flex;
+  flex-direction: row;
+  justify-content :left;
+
+  a{
+    margin-left: 10px;
+  }
+  /*justify-content: space-between;*/
+}
